@@ -3,25 +3,28 @@ Upstream-Name: go-grpc-middleware
 Source: https://github.com/grpc-ecosystem/go-grpc-middleware
 
 Files: *
-Copyright: 2016-2017 Michal Witkowski <michal@improbable.io>
+Copyright: The go-grpc-middleware Authors.
 License: Apache-2.0
 
 Files: debian/*
-Copyright: 2018 Pirate Praveen <praveen@debian.org>
-           2020 Shengjing Zhu <zhsj@debian.org>
+Copyright: 2020, Shengjing Zhu <zhsj@debian.org>
+ 2018, Pirate Praveen <praveen@debian.org>
 License: Apache-2.0
 Comment: Debian packaging is licensed under the same terms as upstream
 
-Files: recovery/interceptors_test.go
-       recovery/doc.go
-       recovery/options.go
-       recovery/interceptors.go
-       recovery/examples_test.go
-Copyright: 2017 David Ackroyd <daveo.ackroyd@gmail.com>
+Files: interceptors/logging/slog.go
+Copyright: The go-grpc-middleware Authors.
+ 2022, The Go Authors.
 License: Apache-2.0
 
-Files: logging/logrus/server_interceptors.go
-Copyright: 2017 Improbable Worlds Ltd.
+Files: interceptors/protovalidate/options.go
+Copyright: The go-grpc-middleware Authors.
+ 2017, David Ackroyd.
+License: Apache-2.0
+
+Files: interceptors/recovery/*
+Copyright: The go-grpc-middleware Authors.
+ 2017, David Ackroyd.
 License: Apache-2.0
 
 License: Apache-2.0

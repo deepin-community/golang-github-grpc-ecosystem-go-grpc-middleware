@@ -1,4 +1,12 @@
 #!/usr/bin/make -f
 
+# requres bufbuild/buf
+DH_GOLANG_EXCLUDES := protovalidate examples
+export DH_GOLANG_EXCLUDES
+
 %:
-	dh $@ --buildsystem=golang --with=golang
+	dh $@ --buildsystem=golang --with=golang  --builddirectory=_build
+
+# avoid autopkgtest failures
+execute_before_dh_auto_install:
+	rm -vf _build/src/github.com/grpc-ecosystem/go-grpc-middleware/interceptors/retry/retry_test.go

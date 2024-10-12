@@ -1,3 +1,20 @@
+golang-github-grpc-ecosystem-go-grpc-middleware (2.1.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Add Breaks for golang-gitlab-gitlab-org-labkit-dev
+
+ -- Mathias Gibbens <gibmat@debian.org>  Sun, 04 Aug 2024 01:00:51 +0000
+
+golang-github-grpc-ecosystem-go-grpc-middleware (2.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release
+  * add missing dependencies: oklog-run, opentelemetry-otel
+  * exclude protovalidate, needs https://github.com/bufbuild/buf
+  * Build against golang/protobuf@v1.5 and newer grpc
+
+ -- Reinhard Tartler <siretart@tauware.de>  Sun, 28 Jul 2024 14:20:15 -0400
+
 golang-github-grpc-ecosystem-go-grpc-middleware (1.3.0-2) unstable; urgency=medium
 
   * Team upload
